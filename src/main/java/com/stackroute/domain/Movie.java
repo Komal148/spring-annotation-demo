@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Movie {
-    @Autowired
+    //@Autowired
     private Actor actor;
 
     public Movie(){}

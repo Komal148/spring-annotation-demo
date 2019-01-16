@@ -2,32 +2,32 @@ package com.stackroute.domain;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.PropertySource;
+//import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 @Component
-@PropertySource("classpath:application.properties")
+//@PropertySource("classpath:application.properties")
 public class Actor {
 
-    @Autowired
-    @Value("${actor.name}")
+    //@Autowired
+    //@Value("${actor.name}")
     private String name;
 
-    @Value("${actor.gender}")
+    //@Value("${actor.gender}")
     private String gender;
 
-    @Value("${actor.age}")
+    //@Value("${actor.age}")
     private int age;
 
     public Actor(){
 
     }
-/*
+
     public Actor(String name, String gender, int age) {
         this.name = name;
         this.gender = gender;
         this.age = age;
-    }*/
+    }
     //    @Autowired
 //    public Actor(  @Value("${actor.name}")String name, @Value("${actor.gender}")String gender,@Value("${actor.age}")int age){
 //        this.name=name;

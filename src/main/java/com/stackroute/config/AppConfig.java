@@ -5,17 +5,13 @@ import com.stackroute.domain.Movie;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
 @Configuration
 @ComponentScan(basePackages = "com.stackroute")
 public class AppConfig {
 
-//    @Bean
-//    public Movie movie()
-//    {
-//        return new Movie();
-//    }
-    /*@Bean("actor1")
+    @Bean("actor1")
     public Actor getActorBean1()
     {
         Actor actor=new Actor("Komal","female",22);
@@ -42,6 +38,7 @@ public class AppConfig {
     }
 
     @Bean("movie2")
+    @Scope("prototype")
     public Movie getMovieBean2(){
         return new Movie(getActorBean2());
     }
@@ -50,5 +47,10 @@ public class AppConfig {
     public Movie getMovieBean3(){
         return new Movie(getActorBean3());
     }
-*/
+
+    @Bean()
+    public Movie getBeanBean4()
+    {
+        return new Movie(getActorBean1());
+    }
 }
