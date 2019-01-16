@@ -3,13 +3,13 @@ package com.stackroute.domain;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 @Component
 @PropertySource("classpath:application.properties")
 public class Actor {
 
-    @Autowired
     @Value("${actor.name}")
     private String name;
 
@@ -22,8 +22,8 @@ public class Actor {
     public Actor(){
 
     }
-/*
-    public Actor(String name, String gender, int age) {
+
+    /*public Actor(String name, String gender, int age) {
         this.name = name;
         this.gender = gender;
         this.age = age;
