@@ -23,19 +23,6 @@ public class Actor {
 
     }
 
-    /*public Actor(String name, String gender, int age) {
-        this.name = name;
-        this.gender = gender;
-        this.age = age;
-    }*/
-    //    @Autowired
-//    public Actor(  @Value("${actor.name}")String name, @Value("${actor.gender}")String gender,@Value("${actor.age}")int age){
-//        this.name=name;
-//        this.age=age;
-//        this.gender=gender;
-//
-//    }
-
     @Override
     public String toString() {
         return "Actor{" +
